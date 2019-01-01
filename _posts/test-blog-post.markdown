@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Make some sketches
+title:  Test FAQ Post
 date:   2015-04-30 10:57:12
 image: images/@stock/blog-3.jpg
 excerpt:
