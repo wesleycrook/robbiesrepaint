@@ -3,7 +3,7 @@ title: RobbiesRepaint.com
 email: robbie@robbiesrepaint.com
 description: > # this means to ignore newlines until "baseurl:"
   Professional painting service. High quality work, excellent customer service, attention to detail, and speed set us apart from our competitors. We do the job correctly the first time with speed and accuracy. We do residential painting, property management painting, and more.
-baseurl: "/" # the subpath of your site, e.g. /blog/
+baseurl: "/robbiesrepaint" # the subpath of your site, e.g. /blog/
 url: "http://robbiesrepaint.com" # the base hostname & protocol for your site
 # twitter_username: jekyllrb
 # github_username:  jekyll
