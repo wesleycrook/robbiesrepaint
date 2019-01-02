@@ -512,13 +512,13 @@ socials:
     <div class='row'>
         {% for post in site.posts %}
         {% if forloop.index > 3 %}
-        {% break %}
+            {% break %}
         {% endif %}
         <div class='large-4 medium-4 columns'>
             <div class='mod modBlogPost'>
                 <a href="{{post.url}}"><img alt="" src="{{site.url}}/{{post.image}}" /></a>
                 <div class='content'>
-                    <h4><a href="#">{{post.title}}</a></h4>
+                    <h4><a href="{{post.url}}">{{post.title}}</a></h4>
                     <p>{{post.excerpt}}</p>
                     <p><a href="{{post.url}}">Read More <i class="fas fa-angle-double-right"></i></a></p>
                 </div>
@@ -530,36 +530,9 @@ socials:
     <div class='row'>
         <div class='large-12 columns'>
             <p class='centered-text'>
-                <a class='button boxed' href='{{site.url}}/blog.html'>See more posts</a>
+                <a class='button' href='{{site.url}}/blog/index.html'>See more posts</a>
             </p>
         </div>
     </div>
     <div class='two spacing'></div>
 </div>
-
-<!-- ----------------- -->
-<!-- SECTION - CONTACT -->
-<!-- ----------------- -->
-
-<!-- <div class='full' style='color: #fff;'>
-    <div class='row'>
-        <div class='large-12 columns'>
-            {% include section-header.html class="alt" title="Find us elsewhere" title_style="color: #fff;" %}
-            <div class='two spacing'></div>
-        </div>
-        {% for social in page.socials %}
-        <div class='medium-3 columns'>
-            <div class='big-social'>
-                <a href='{{social.link_to}}'>
-                    <i class='{{social.icon_class}}'></i>
-                </a>
-                <h4>{{social.title}}</h4>
-                <p style="color: #000">{{social.text}}</p>
-            </div>
-            <div class='two spacing'></div>
-        </div>
-        {% endfor %}
-    </div>
-    <div class='four spacing'></div>
-    <div class='two spacing'></div>
-</div> -->
