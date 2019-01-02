@@ -38,6 +38,30 @@ projects:
     desc: Description goes here...
 
 # ---------------------
+# Services
+# ---------------------
+
+services_1:
+  - title: Walls
+    fa_class: fa fa-brush
+  - title: Trim
+    fa_class: fa fa-door-open
+  - title: Doors
+    fa_class: fa fa-door-closed
+  - title: Patch Nail Holes
+    fa_class: fa fa-hammer
+
+services_2:
+  - title: Color Matching
+    fa_class: fa fa-eye-dropper
+  - title: Caulking
+    fa_class: fa fa-grip-lines-vertical
+  - title: Foyer
+    fa_class: fa fa-archway
+  - title: Hard-to-reach Areas
+    fa_class: fa fa-angle-double-up
+
+# ---------------------
 # Testimonials
 # ---------------------
 
@@ -232,47 +256,20 @@ socials:
         </div>
     </div>
     <div class='row'>
-        <div class='large-12 columns'>
-            <div class='mod modBoxedTextSlider'>
-                <div class='boxes'>
-                    {% include box.html class="fa fa-brush" title="Walls" text="Placeat vel itaque perspiciatis sed
-                    repellat qui nihil
-                    recusandae doloremque aperiam necessitatibus aspernatur. illum ad adipisci saepe dolores cumque
-                    fugit nihil minus.
-                    temporibus corporis eos dolore reprehenderit ipsa at neque ab ut porro perferendis." %}
-                    {% include box.html class="fa fa-door-open" title="Trim" text="Placeat vel itaque perspiciatis sed
-                    repellat qui nihil
-                    recusandae doloremque aperiam necessitatibus aspernatur. illum ad adipisci saepe dolores cumque
-                    fugit nihil minus.
-                    temporibus corporis eos dolore reprehenderit ipsa at neque ab ut porro perferendis." %}
-                    {% include box.html class="fa fa-door-closed" title="Doors" text="Placeat vel itaque perspiciatis
-                    sed repellat qui.
-                    minus. temporibus corporis eos dolore reprehenderit ipsa at neque ab ut porro perferendis." %}
-                    {% include box.html class="fa fa-hammer" title="Patch Nail Holes" text="Placeat vel itaque perspiciatis sed repellat qui nihil recusandae doloremque aperiam necessitatibus aspernatur. illum ad adipisci saepe dolores cumque fugit nihil
-                    minus. temporibus corporis eos dolore reprehenderit ipsa at neque ab ut porro perferendis." %}
-                    {% include box.html class="fa fa-eye-dropper" title="Color Matching" text="Placeat vel itaque
-                    perspiciatis sed repellat qui
-                    nihil recusandae doloremque aperiam necessitatibus aspernatur. illum ad adipisci saepe dolores
-                    cumque fugit nihil
-                    minus. temporibus corporis eos dolore reprehenderit ipsa at neque ab ut porro perferendis." %}
-                    {% include box.html class="fa fa-grip-lines-vertical" title="Caulking" text="Placeat vel itaque
-                    perspiciatis sed repellat qui
-                    nihil recusandae doloremque aperiam necessitatibus aspernatur. illum ad adipisci saepe dolores
-                    cumque fugit nihil
-                    minus. temporibus corporis eos dolore reprehenderit ipsa at neque ab ut porro perferendis." %}
-                    {% include box.html class="fa fa-archway" title="Foyer" text="Placeat vel itaque perspiciatis sed
-                    repellat qui
-                    nihil recusandae doloremque aperiam necessitatibus aspernatur. illum ad adipisci saepe dolores
-                    cumque fugit nihil
-                    minus. temporibus corporis eos dolore reprehenderit ipsa at neque ab ut porro perferendis." %}
-                    {% include box.html class="fa fa-angle-double-up" title="Hard-to-reach Areas" text="Placeat vel
-                    itaque perspiciatis sed repellat qui
-                    nihil recusandae doloremque aperiam necessitatibus aspernatur. illum ad adipisci saepe dolores
-                    cumque fugit nihil
-                    minus. temporibus corporis eos dolore reprehenderit ipsa at neque ab ut porro perferendis." %}
-                </div>
-            </div>
+        {% for service in page.services_1 %}
+        <div class='large-3 columns'>
+            <p class='text-center'>{{ service.title }}</p>
+            <i class='{{ service.fa_class }}'></i>
         </div>
+        {% endfor %}
+    </div>
+    <div class='row'>
+        {% for service in page.services_2 %}
+        <div class='large-3 columns'>
+            <p class='text-center'>{{ service.title }}</p>
+            <i class='{{ service.fa_class }}'></i>
+        </div>
+        {% endfor %}
     </div>
     <div class='four spacing'></div>
 </div>
@@ -438,17 +435,6 @@ socials:
             <div class='mod modTeamMember style-2'>
                 <div class='member'>
                     <img class="avatar" width="250" height="250" alt="" src="{{member.avatar}}" />
-                    <!-- <div class='overlay'>
-                        <ul class='socials'>
-                            {% for social in member.socials %}
-                            <li>
-                                <a href='{{social.url}}'>
-                                    <i class='fa fa-{{social.icon}}'></i>
-                                </a>
-                            </li>
-                            {% endfor %}
-                        </ul>
-                    </div> -->
                 </div>
                 <h3>{{member.name}}</h3>
                 <p class='position'>{{member.position}}</p>
