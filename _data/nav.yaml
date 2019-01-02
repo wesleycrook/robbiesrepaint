@@ -13,6 +13,9 @@
 - name: Team
   path: "#team"
   section_id: team
+- name: FAQ
+  path: "#faq"
+  section_id: faq
 - name: Contact
   path: "#contact"
   section_id: contact

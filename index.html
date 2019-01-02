@@ -246,14 +246,9 @@ socials:
                     fugit nihil minus.
                     temporibus corporis eos dolore reprehenderit ipsa at neque ab ut porro perferendis." %}
                     {% include box.html class="fa fa-door-closed" title="Doors" text="Placeat vel itaque perspiciatis
-                    sed repellat qui
-                    nihil recusandae doloremque aperiam necessitatibus aspernatur. illum ad adipisci saepe dolores
-                    cumque fugit nihil
+                    sed repellat qui.
                     minus. temporibus corporis eos dolore reprehenderit ipsa at neque ab ut porro perferendis." %}
-                    {% include box.html class="fa fa-hammer" title="Patch Nail Holes" text="Placeat vel itaque
-                    perspiciatis sed repellat qui
-                    nihil recusandae doloremque aperiam necessitatibus aspernatur. illum ad adipisci saepe dolores
-                    cumque fugit nihil
+                    {% include box.html class="fa fa-hammer" title="Patch Nail Holes" text="Placeat vel itaque perspiciatis sed repellat qui nihil recusandae doloremque aperiam necessitatibus aspernatur. illum ad adipisci saepe dolores cumque fugit nihil
                     minus. temporibus corporis eos dolore reprehenderit ipsa at neque ab ut porro perferendis." %}
                     {% include box.html class="fa fa-eye-dropper" title="Color Matching" text="Placeat vel itaque
                     perspiciatis sed repellat qui
@@ -506,10 +501,11 @@ socials:
 <!-- SECTION - FAQ -->
 <!-- ----------------- -->
 
-<div class='full parallax' style='background-image: url(images/@stock/blog-posts-bg.jpg);'>
+<a id='faq'></a>
+<div class='full parallax' style='background: #f5f5f5'>
     <div class='row'>
         <div class='large-12 columns'>
-            {% include section-header.html title="Frequently Asked Questions" class="alt" title_style="color: #fff;" %}
+            {% include section-header.html title="Frequently Asked Questions" class="alt" %}
             <div class='two spacing'></div>
         </div>
     </div>
@@ -522,15 +518,9 @@ socials:
             <div class='mod modBlogPost'>
                 <a href="{{post.url}}"><img alt="" src="{{site.url}}/{{post.image}}" /></a>
                 <div class='content'>
-                    <p class='date'>{{post.date | date: "%B %d, %Y" }}</p>
                     <h4><a href="#">{{post.title}}</a></h4>
                     <p>{{post.excerpt}}</p>
-                    <div class='tags'>
-                        {% for tag in post.tags %}
-                        <a href="#">{{tag | capitalize}}</a>
-                        {% unless forloop.last %},{% endunless %}
-                        {% endfor %}
-                    </div>
+                    <p><a href="{{post.url}}">Read More <i class="fas fa-angle-double-right"></i></a></p>
                 </div>
             </div>
         </div>

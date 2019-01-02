@@ -1,19 +1,18 @@
 ---
 layout: post
-title:  Tom is designing the new site
-date:   2015-05-02 10:57:12
-image: /images/@stock/blog-1.jpg
+title:  Why do I need to hire a professional?
+date:   2019-01-01 10:57:12
+image:  robbiesrepaint/images/faq/faq-should-i-hire-a-professional.jpg
 excerpt:
   Iste neque doloribus dolor quis ad sit dolores dolor sit perferendis. nemo in rerum ducimus possimus aspernatur quas est. dolorem eaque vel id quasi voluptatem eligendi rerum et quo ut. fuga qui ea voluptates sunt
-categories: Business
-tags: design business
-author: honryou
+categories: Blog
+tags: paint
+author: robbie
 ---
 
 Et sed ut quo maiores praesentium consequatur ipsum fuga aliquid corporis vel. exercitationem saepe vel aut consectetur vitae sed. necessitatibus est voluptatem nihil officiis nam debitis et perferendis exercitationem animi qui impedit modi recusandae. sapiente molestiae excepturi maxime. eum sequi nisi et itaque sunt nesciunt nulla vel sit ratione animi
 
 Deleniti laboriosam soluta animi non corrupti. labore est quasi omnis ducimus. facere pariatur molestiae eum vel dignissimos debitis quam et id
-
 
 Esse labore voluptate [nam dolorum veniam](#) numquam et reiciendis qui itaque voluptas odit dicta et. est ullam et omnis repellat qui aliquam delectus quod aperiam quam tenetur odit illo voluptatem. optio tenetur occaecati autem vel occaecati voluptas iste sunt libero quo est ex eum. aut molestiae ea est inventore aut quia ab voluptatem hic iste
 
