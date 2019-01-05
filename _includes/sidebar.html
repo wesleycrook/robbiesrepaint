@@ -1,8 +1,8 @@
 <div class='links'>
     <h3>Other FAQ's</h3>
     <ul>
-        {% for post in site.posts %}
-            <li><a href="{{post.url}}">{{post.title}}</a></li>
+        {% for faq in site.data.faqs %}
+            <li class="faq-li"><a href="{{faq.url}}">{{faq.title}}</a></li>
         {% endfor %}
     </ul>
 </div>

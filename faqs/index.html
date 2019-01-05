@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<!-- MASONRY -->
+<div class='full' style='background: #f5f5f5;'>
+    <div class='row'>
+        <div class='large-12 columns'>
+            {% include section-header.html title="Frequently Asked Questions" class="alt" %}
+            <div class='two spacing'></div>
+        </div>
+    </div>
+    <div class='row'>
+        <div class='large-12 columns'>
+            <div class='masonry-container'>
+                {% for faq in site.data.faqs %}
+                    <div class='masonry mod modBlogPost popin'>
+                        {% if faq.image %}
+                            <a href="{{site.baseurl}}/faqs/{{faq.url}}"><img width="500" height="332" alt="" src="../{{faq.image}}" /></a>
+                        {% endif %}
+                        <div class='content'>
+                            <h4><a href="{{site.baseurl}}/faqs/{{faq.url}}">{{faq.title}}</a></h4>
+                            <p>
+                                {{faq.excerpt}}
+                            </p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class='four spacing'></div>
+</div>

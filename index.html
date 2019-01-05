@@ -121,26 +121,9 @@ clients:
     url: https://www.waltonfoundation.net/accessible-housing/for-seniors/
 
 # ---------------------
-# Contact
+# FAQs in _data/faqs.yaml
 # ---------------------
-
-socials:
-  - title: Facebook
-    text: Connect us with facebook
-    icon_class: fa fa-facebook
-    link_to: #
-  - title: Google
-    text: See us on Google
-    icon_class: fa fa-google
-    link_to: http://facebook.com
-  - title: Facebook
-    text: Connect us with facebook
-    icon_class: fa fa-facebook
-    link_to: http://facebook.com
-  - title: Facebook
-    text: Connect us with facebook
-    icon_class: fa fa-facebook
-    link_to: http://facebook.com
+    
 ---
 
 <!-- ---------- -->
@@ -400,28 +383,13 @@ socials:
 <!-- SECTION - CALL TO ACTION -->
 <!-- ------------------------ -->
 
-<div class='full no-padding' style='background: #F9CE06; color: #fff'>
-    <div class='two spacing'></div>
-    <div class='mod modCallToAction'>
-        <div class='row'>
-            <div class='large-12 columns'>
-                <p class="text-center">Give us a call today to talk through your project: <span id="callToActionPhone">#</span></p>
-                <script>
-                    addEventListener("load", () => {
-                        document.querySelector('#callToActionPhone').innerHTML = getPhoneNumber();
-                    });
-                </script>
-            </div>
-        </div>
-    </div>
-    <div class='spacing'></div>
-</div>
-<a id='team'></a>
+{% include call-to-action.html %}
 
 <!-- ----------------------- -->
 <!-- SECTION - MEET THE TEAM -->
 <!-- ----------------------- -->
 
+<a id='team'></a>
 <div class='full'>
     <div class='row'>
         <div class='large-12 columns'>
@@ -488,7 +456,7 @@ socials:
 <!-- ----------------- -->
 
 <a id='faq'></a>
-<div class='full parallax' style='background: #f5f5f5'>
+<div class='full' style='background: #f5f5f5'>
     <div class='row'>
         <div class='large-12 columns'>
             {% include section-header.html title="Frequently Asked Questions" class="alt" %}
@@ -496,17 +464,17 @@ socials:
         </div>
     </div>
     <div class='row'>
-        {% for post in site.posts %}
+        {% for faq in site.data.faqs %}
         {% if forloop.index > 3 %}
             {% break %}
         {% endif %}
         <div class='large-4 medium-4 columns'>
             <div class='mod modBlogPost'>
-                <a href="{{post.url}}"><img alt="" src="{{site.url}}/{{post.image}}" /></a>
+                <a href="{{faq.url}}"><img alt="" src="{{site.baseurl}}/{{faq.image}}" /></a>
                 <div class='content'>
-                    <h4><a href="{{post.url}}">{{post.title}}</a></h4>
-                    <p>{{post.excerpt}}</p>
-                    <p><a href="{{post.url}}">Read More <i class="fas fa-angle-double-right"></i></a></p>
+                    <h4><a href="{{site.baseurl}}/faqs/{{faq.url}}">{{faq.title}}</a></h4>
+                    <p>{{faq.excerpt}}</p>
+                    <p><a href="{{site.baseurl}}/faqs/{{faq.url}}">Read More <i class="fas fa-angle-double-right"></i></a></p>
                 </div>
             </div>
         </div>
@@ -516,9 +484,50 @@ socials:
     <div class='row'>
         <div class='large-12 columns'>
             <p class='centered-text'>
-                <a class='button' href='{{site.url}}/blog/index.html'>See more posts</a>
+                <a class='button' href='{{site.baseurl}}/faqs/index.html'>See More Frequently Asked Questions</a>
             </p>
         </div>
     </div>
     <div class='two spacing'></div>
 </div>
+
+<!-- Alternative FAQs Section with Accordion Drop-Downs -->
+<!-- <div class='full' style='background: #f5f5f5'>
+    <div class='one spacing' style="background: #555;"></div>
+    <div class='three spacing'></div>
+    <div class='row'>
+        <div class='large-12 columns'>
+            {% include section-header.html title="Frequently Asked Questions (version 2)" class="alt" %}
+            <div class='two spacing'></div>
+        </div>
+    </div>
+    <div class='row'>
+        <ul class="accordion" data-accordion>
+            <li class="accordion-navigation">
+                <a href="#panel1a">Why Do I Need to Hire a Professional?</a>
+                <div id="panel1a" class="content active">
+                    Panel 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.
+                </div>
+            </li>
+            <li class="accordion-navigation">
+                <a href="#panel2a">Which Quality of Paint Should I Use?</a>
+                <div id="panel2a" class="content">
+                    Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.
+                </div>
+            </li>
+            <li class="accordion-navigation">
+                <a href="#panel3a">What are the Most Popular Colors of Paint This Year?</a>
+                <div id="panel3a" class="content">
+                    Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class='two spacing'></div>
+</div> -->

@@ -3438,3 +3438,9 @@ body {
 .footer-contact-info {
   font-size: 130%;
 }
+
+.links li.faq-li {
+  list-style: disc;
+  margin-bottom: 6px;
+  line-height: 17px;
+}
