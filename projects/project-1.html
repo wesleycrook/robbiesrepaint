@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: projects
 images:
-- images/@stock/big-work-1.jpg
-- images/@stock/big-work-2.jpg
+- images/@stock/istockphoto-489606922-2048x2048.jpg
+- images/@stock/istockphoto-489606922-2048x2048-dark.jpg
 ---
 
 <div class='full'>
@@ -12,7 +12,7 @@ images:
                 <div class='slides'>
                     {% for image in page.images %}
                     <div class="slide">
-                        <img src="{{site.url}}/{{image}}" alt="">
+                        <img src="{{site.url}}{{site.baseurl}}/{{image}}" alt="">
                     </div>
                     {% endfor %}
                 </div>
@@ -22,7 +22,7 @@ images:
     <div class='spacing'></div>
     <div class='row'>
         <div class='large-8 columns'>
-            <h3>Project title</h3>
+            <h3>Project 1</h3>
             <p>
                 Dolores quibusdam eum itaque est et iusto perspiciatis saepe consequuntur quia occaecati consequatur.
                 dignissimos dolores omnis voluptatum quia totam minus architecto qui assumenda ex aut aut. voluptatem
@@ -38,8 +38,6 @@ images:
                 quisquam voluptas qui quos nesciunt excepturi maiores ut aut ut perferendis quos
             </p>
             <div class='spacing'></div>
-            <a class='button small' href='http://themeforest.net/user/honryou/portfolio?ref=honryou' target="_blank">Visit
-                website</a>
         </div>
         <div class='large-4 columns'>
             <ul class='info'>
@@ -47,22 +45,22 @@ images:
                     <b>Client:</b> John Smith
                 </li>
                 <li>
-                    <b>Date:</b> June 2013
+                    <b>Date:</b> June 2015
                 </li>
                 <li>
                     <div class='spacing'></div>
-                    <a href='' title='previous'>
+                    <a href='project-4.html' title='previous'>
                         <i class='icon-left-open'></i>
                     </a>
-                    <a href='portfolio.html' title='back to work list'>
+                    <a href='index.html' title='back to projects list'>
                         <i class='icon-layout'></i>
                     </a>
-                    <a href='' title='next'>
+                    <a href='project-2.html' title='next'>
                         <i class='icon-right-open'></i>
                     </a>
                 </li>
             </ul>
         </div>
     </div>
-    <div class='four spacing'></div>
+    <div class='two spacing'></div>
 </div>

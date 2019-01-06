@@ -1,0 +1,16 @@
+- avatar: images/@stock/male-gray.png
+  name: Wayne Humphries
+  position: Owner / Painter
+  desc: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
+- avatar: images/our-team/robbie-humphries.jpg
+  name: Robbie Humphries
+  position: Owner / Painter
+  desc: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
+- avatar: images/@stock/male-gray.png
+  name: George
+  position: Painter
+  desc: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
+- avatar: images/@stock/male-gray.png
+  name: Fernando
+  position: Painter
+  desc: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.

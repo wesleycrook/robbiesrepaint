@@ -1,0 +1,27 @@
+# project class key: interior, exterior, walls, trim, doors, patch-repair, caulking, foyer, hard-to-reach
+# Consider using a Foundation "Clearing Lightbox" for multi-image projects if the built-in slider isn't sufficient.
+
+- image: images/@stock/project-thumbnails-1.jpg
+  title: Project - 1
+  url: project-1.html
+  class: interior walls trim patch-repair caulking
+  desc: Description goes here...
+  excerpt: Scelerisque facere morbi fusce illo primis. Primis autem expedita, ad facilisis excepteur nesciunt interdum eiusmod...
+- image: images/@stock/project-thumbnails-4.jpg
+  title: Project - 2
+  url: project-2.html
+  class: exterior trim doors foyer
+  desc: Description goes here...
+  excerpt: Scelerisque facere morbi fusce illo primis. Primis autem expedita, ad facilisis excepteur nesciunt interdum eiusmod...
+- image: images/@stock/project-thumbnails-3.jpg
+  title: Project - 3
+  url: project-3.html
+  class: interior foyer hard-to-reach
+  desc: Description goes here...
+  excerpt: Scelerisque facere morbi fusce illo primis. Primis autem expedita, ad facilisis excepteur nesciunt interdum eiusmod...
+- image: images/@stock/project-thumbnails-5.jpg
+  title: Project - 4
+  url: project-4.html
+  class: interior walls patch-repair
+  desc: Description goes here...
+  excerpt: Scelerisque facere morbi fusce illo primis. Primis autem expedita, ad facilisis excepteur nesciunt interdum eiusmod...

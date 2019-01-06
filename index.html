@@ -1,129 +1,5 @@
 ---
 layout: default
-
-# ---------------------
-# Header/Slider
-# ---------------------
-
-slides:
-  - bg: images/@stock/istockphoto-542684518-2048x2048.jpg
-    title: Professional Painters
-    tagline: High quality work, excellent customer service, attention to detail,<br>and speed set us apart from our competitors.<br>We do the job correctly the first time<br>with speed and accuracy
-
-# ---------------------
-# Projects
-# ---------------------
-# project class key: interior, exterior, walls, trim, doors, patch-repair, caulking, foyer, hard-to-reach
-
-projects:
-  - image: images/@stock/project-thumbnails-1.jpg
-    title: Project - 1
-    link_to: portfolio-item.html
-    class: interior walls trim patch-repair caulking
-    desc: Description goes here...
-  - image: images/@stock/project-thumbnails-4.jpg
-    title: Project - 2
-    link_to: portfolio-item.html
-    class: exterior trim doors foyer
-    desc: Description goes here...
-  - image: images/@stock/project-thumbnails-3.jpg
-    title: Project - 3
-    link_to: portfolio-item.html
-    class: interior foyer hard-to-reach
-    desc: Description goes here...
-  - image: images/@stock/project-thumbnails-5.jpg
-    title: Project - 4
-    link_to: portfolio-item.html
-    class: interior walls patch-repair
-    desc: Description goes here...
-
-# ---------------------
-# Services
-# ---------------------
-
-services_1:
-  - title: Walls
-    fa_class: fa fa-brush
-  - title: Trim
-    fa_class: fa fa-door-open
-  - title: Doors
-    fa_class: fa fa-door-closed
-  - title: Patch Nail Holes
-    fa_class: fa fa-hammer
-
-services_2:
-  - title: Color Matching
-    fa_class: fa fa-eye-dropper
-  - title: Caulking
-    fa_class: fa fa-grip-lines-vertical
-  - title: Foyer
-    fa_class: fa fa-archway
-  - title: Hard-to-reach Areas
-    fa_class: fa fa-angle-double-up
-
-# ---------------------
-# Testimonials
-# ---------------------
-
-testimonials:
-  - quote: Reprehenderit eos et non et ut eum reprehenderit quis sequi quia vel repellendus id. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est.
-    author: "- David White, Homeowner, Evans GA"
-  - quote: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing.
-    author: "- Suzy Smith, Sherman & Hemstreet"
-  - quote: Reprehenderit eos et non et ut eum reprehenderit quis sequi quia vel repellendus id. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est.
-    author: "- John Adams, Old Town"
-
-# ---------------------
-# Meet the team
-# ---------------------
-
-members:
-  - avatar: images/@stock/male-gray.png
-    name: Wayne Humphries
-    position: Owner / Painter
-    desc:
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
-  - avatar: images/our-team/robbie-humphries.jpg
-    name: Robbie Humphries
-    position: Owner / Painter
-    desc:
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
-  - avatar: images/@stock/male-gray.png
-    name: George
-    position: Painter
-    desc:
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
-  - avatar: images/@stock/male-gray.png
-    name: Fernando
-    position: Painter
-    desc:
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
-
-# ---------------------
-# Our Customers
-# ---------------------
-
-clients:
-  - title: Sherman & Hemstreet Real Estate Company
-    image: images/customers/logo-sherman-and-hemstreet.png
-    url: http://www.shermanandhemstreet.com
-  - title: Augusta Partners Property Management
-    image: images/customers/logo-augusta-partners-pm.png
-    url: http://www.augustapropertymanagement.com/
-  - title: Southern Development Management Company
-    image: images/customers/logo-sdmc.png
-    url: https://sdmcinc.com
-  - title: Blanchard and Calhoun Real Estate Co.
-    image: images/customers/logo-blanchard-and-calhoun.png
-    url: http://www.blanchardandcalhoun.com/
-  - title: Walton Properties
-    image: images/customers/logo-walton-foundation.png
-    url: https://www.waltonfoundation.net/accessible-housing/for-seniors/
-
-# ---------------------
-# FAQs in _data/faqs.yaml
-# ---------------------
-    
 ---
 
 <!-- ---------- -->
@@ -149,7 +25,7 @@ clients:
             {% endfor %}
         </ul> -->
         <ul class="sequence-canvas">
-            {% for slide in page.slides %}
+            {% for slide in site.data.slides %}
             {% if forloop.first %}
             {% assign style = 'static' %}
             {% else %}
@@ -190,9 +66,6 @@ clients:
                 dolore magna aliquam.
             </p>
             <div class='two spacing'></div>
-            <!-- <p class='centered-text'>
-        <img alt="" src="../images/@stock/circle-logo.png" />
-      </p> -->
         </div>
     </div>
 </div>
@@ -211,16 +84,16 @@ clients:
     </div>
     <div class='row'>
         <div class='medium-3 large-3 columns'>
-            {% include milestone.html title="Projects Completed" from="0" to="69" icon_class="fa fa-paint-roller" %}
+            {% include milestone.html title="Projects Completed" from="0" to="783" icon_class="fa fa-paint-roller" %}
         </div>
         <div class='medium-3 large-3 columns'>
-            {% include milestone.html title="Years of Experience" from="0" to="57" icon_class="fa fa-hashtag" %}
+            {% include milestone.html title="Combined Years of Experience" from="0" to="57" icon_class="fa fa-hashtag" %}
         </div>
         <div class='medium-3 large-3 columns'>
-            {% include milestone.html title="Happy Clients" from="0" to="59" icon_class="fa fa-fill" %}
+            {% include milestone.html title="Happy Clients" from="0" to="159" icon_class="fa fa-fill" %}
         </div>
         <div class='medium-3 large-3 columns'>
-            {% include milestone.html title="Rooms Painted" from="0" to="21" icon_class="fa fa-brush" %}
+            {% include milestone.html title="Rooms Painted" from="0" to="221" icon_class="fa fa-brush" %}
         </div>
     </div>
     <div class='two spacing'></div>
@@ -230,7 +103,7 @@ clients:
 <!-- SECTION - SERVICES -->
 <!-- ------------------ -->
 
-<!-- <a id='services'></a>
+<a id='services'></a>
 <div class='full services' style='background: #f5f5f5'>
     <div class='row'>
         <div class='large-12 columns'>
@@ -239,27 +112,78 @@ clients:
         </div>
     </div>
     <div class='row'>
-        {% for service in page.services_1 %}
-        <div class='large-3 columns'>
-            <p class='text-center'>{{ service.title }}</p>
-            <i class='{{ service.fa_class }}'></i>
+        <div class='large-12 columns'>
+            <div class='mod modBoxedTextSlider'>
+                <div class='boxes'>
+                    {% for service in site.data.services %}
+                        <div class='box'>
+                            <i class='{{ service.fa_class }}'></i>
+                            <h4>{{ service.title }}</h4>
+                            <p>{{ service.text }}</p>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
         </div>
-        {% endfor %}
-    </div>
-    <div class='row'>
-        {% for service in page.services_2 %}
-        <div class='large-3 columns'>
-            <p class='text-center'>{{ service.title }}</p>
-            <i class='{{ service.fa_class }}'></i>
-        </div>
-        {% endfor %}
     </div>
     <div class='four spacing'></div>
-</div> -->
+</div>
 
-<!-- ------------------ -->
-<!-- SECTION - SHOWCASE -->
-<!-- ------------------ -->
+<!-- ---------------------- -->
+<!-- SECTION - SERVICE AREA -->
+<!-- ---------------------- -->
+
+<div class='full parallax' style='background-image: url(images/service-area-bg-1.jpg); color: #fff;'>
+    <div class='row'>
+        <div class='large-12 columns'>
+            {% include section-header.html title="Service Area" title_style="color: #fff;" class="alt" %}
+            <div class='two spacing'></div>
+        </div>
+    </div>
+    <div class='row'>
+        <div class='large-2 text-center columns'>
+            Appling, GA<br>
+            Augusta, GA<br>
+            Bath, SC<br>
+            Beech Island, SC<br>
+        </div>
+        <div class='large-2 text-center columns'>
+            Blythe, GA<br>
+            Clarks Hill, SC<br>
+            Clearwater, SC<br>
+            Evans, GA<br>
+        </div>
+        <div class='large-2 text-center columns'>
+            Gloverville, SC<br>
+            Graniteville, SC<br>
+            Grovetown, GA<br>
+            Harlem, GA<br>
+        </div>
+        <div class='large-2 text-center columns'>
+            Hephzibah, GA<br>
+            Jackson, SC<br>
+            Langley, SC<br>
+            Martinez, GA<br>
+        </div>
+        <div class='large-2 text-center columns'>
+            Modoc, SC<br>
+            North Augusta, SC<br>
+            Thomson, GA<br>
+            Vaucluse, SC<br>
+        </div>
+        <div class='large-2 text-center columns'>
+            Warrenton, GA<br>
+            Warrenville, SC<br>
+            Wrens, GA<br>
+        </div>
+    </div>
+    <div class='four spacing'></div>
+</div>
+
+
+<!-- ----------------------------- -->
+<!-- SECTION - PROJECTS / SHOWCASE -->
+<!-- ----------------------------- -->
 
 <a id='showcase'></a>
 <div class='full'>
@@ -310,9 +234,9 @@ clients:
                     </ul>
                 </div>
                 <ul class='gallery large-block-grid-4 medium-block-grid-3 seperated small-block-grid-2'>
-                    {% for project in page.projects %}
+                    {% for project in site.data.projects %}
                     <li class='{{project.class}}'>
-                        <a href='{{project.link_to}}'>
+                        <a href='{{site.baseurl}}/projects/{{project.url}}'>
                             <img width="600" height="500" alt="" src="{{project.image}}" />
                             <div class='overlay' style='background: rgba(248, 204, 48, 0.8);'>
                                 <div class='thumb-info'>
@@ -363,7 +287,7 @@ clients:
                 <div class='row'>
                     <div class='small-12 columns'>
                         <div class='items centered-text'>
-                            {% for testimonial in page.testimonials %}
+                            {% for testimonial in site.data.testimonials %}
                             <div class='item'>
                                 <p class='quote'>{{testimonial.quote}}</p>
                                 <p class='author'>{{testimonial.author}}</p>
@@ -398,7 +322,7 @@ clients:
         </div>
     </div>
     <div class='row'>
-        {% for member in page.members %}
+        {% for member in site.data.members %}
         <div class='small-6 medium-3 large-3 columns'>
             <div class='mod modTeamMember style-2'>
                 <div class='member'>
@@ -422,14 +346,12 @@ clients:
 <div class='full parallax' style='background-image: url(images/@stock/our-customers-bg.jpg); color: #fff;'>
     <div class='row'>
         <div class='large-12 columns'>
-            {% include section-header.html class="alt" title_style="color: #fff;" title="Our customers" %}
+            {% include section-header.html class="alt" title_style="color: #fff;" title="Some of Our Customers" %}
             <div class='spacing'></div>
-            <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
                 laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing. Lorem ipsum dolor
                 sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat volutpat consectetuer sit amet magna adipiscing.
-            </p>
+                aliquam erat volutpat consectetuer sit amet magna adipiscing.</p>
             <div class='spacing'></div>
         </div>
     </div>
@@ -437,7 +359,7 @@ clients:
         <div class='large-12 columns'>
             <div class='mod modClients' data-slides_to_show='4'>
                 <div class='clients'>
-                    {% for client in page.clients %}
+                    {% for client in site.data.clients %}
                     <div>
                         <a href="{{client.url}}" target="_blank">
                             <img width="272" height="180" alt="{{client.title}}" src="{{client.image}}" />
