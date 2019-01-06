@@ -2877,6 +2877,7 @@ body {
 }
 .modTeamMember img {
   width: 100%;
+  border-radius: 50%;
 }
 .modTeamMember .overlay {
   opacity: 0;
