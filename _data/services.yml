@@ -1,8 +1,8 @@
 - title: Walls
-  fa_class: fa fa-brush
+  fa_class: fa fa-paint-roller
   text: Dolorem possimus assumenda aliquid aliquam cursus itaque! Assumenda diamlorem, cum, nobis, cursus, accumsan accumsan, nam lacus nostra aptent! Alias, suscipit tempora iusto omnis.
 - title: Trim
-  fa_class: fa fa-door-open
+  fa_class: fa fa-brush
   text: Dolorem possimus assumenda aliquid aliquam cursus itaque! Assumenda diamlorem, cum, nobis, cursus, accumsan accumsan, nam lacus nostra aptent! Alias, suscipit tempora iusto omnis.
 - title: Doors
   fa_class: fa fa-door-closed
@@ -17,7 +17,7 @@
   fa_class: fa fa-grip-lines-vertical
   text: Dolorem possimus assumenda aliquid aliquam cursus itaque! Assumenda diamlorem, cum, nobis, cursus, accumsan accumsan, nam lacus nostra aptent! Alias, suscipit tempora iusto omnis.
 - title: Foyer
-  fa_class: fa fa-archway
+  fa_class: fa fa-door-open
   text: Dolorem possimus assumenda aliquid aliquam cursus itaque! Assumenda diamlorem, cum, nobis, cursus, accumsan accumsan, nam lacus nostra aptent! Alias, suscipit tempora iusto omnis.
 - title: Hard-to-reach Areas
   fa_class: fa fa-angle-double-up

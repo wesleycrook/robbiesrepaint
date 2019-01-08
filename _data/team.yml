@@ -1,16 +1,16 @@
-- avatar: images/@stock/male-gray.png
-  name: Wayne Humphries
+- name: Wayne Humphries
+  avatar: images/@stock/male-gray.png
   position: Owner / Painter
   desc: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
-- avatar: images/our-team/robbie-humphries.jpg
-  name: Robbie Humphries
+- name: Robbie Humphries
+  avatar: images/team/robbie.jpg
   position: Owner / Painter
   desc: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
-- avatar: images/@stock/male-gray.png
-  name: George
+- name: George
+  avatar: images/team/george.jpg
   position: Painter
   desc: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
-- avatar: images/@stock/male-gray.png
-  name: Fernando
+- name: Fernando
+  avatar: images/team/fernando.jpg
   position: Painter
   desc: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.

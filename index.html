@@ -133,7 +133,7 @@ layout: default
 <!-- SECTION - SERVICE AREA -->
 <!-- ---------------------- -->
 
-<div class='full parallax' style='background-image: url(images/service-area-bg-1.jpg); color: #fff;'>
+<div class='full parallax' style='background-image: url(images/service-area-bg.jpg); color: #fff;'>
     <div class='row'>
         <div class='large-12 columns'>
             {% include section-header.html title="Service Area" title_style="color: #fff;" class="alt" %}
@@ -322,7 +322,7 @@ layout: default
         </div>
     </div>
     <div class='row'>
-        {% for member in site.data.members %}
+        {% for member in site.data.team %}
         <div class='small-6 medium-3 large-3 columns'>
             <div class='mod modTeamMember style-2'>
                 <div class='member'>
@@ -412,44 +412,3 @@ layout: default
     </div>
     <div class='two spacing'></div>
 </div>
-
-<!-- Alternative FAQs Section with Accordion Drop-Downs -->
-<!-- <div class='full' style='background: #f5f5f5'>
-    <div class='one spacing' style="background: #555;"></div>
-    <div class='three spacing'></div>
-    <div class='row'>
-        <div class='large-12 columns'>
-            {% include section-header.html title="Frequently Asked Questions (version 2)" class="alt" %}
-            <div class='two spacing'></div>
-        </div>
-    </div>
-    <div class='row'>
-        <ul class="accordion" data-accordion>
-            <li class="accordion-navigation">
-                <a href="#panel1a">Why Do I Need to Hire a Professional?</a>
-                <div id="panel1a" class="content active">
-                    Panel 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.
-                </div>
-            </li>
-            <li class="accordion-navigation">
-                <a href="#panel2a">Which Quality of Paint Should I Use?</a>
-                <div id="panel2a" class="content">
-                    Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.
-                </div>
-            </li>
-            <li class="accordion-navigation">
-                <a href="#panel3a">What are the Most Popular Colors of Paint This Year?</a>
-                <div id="panel3a" class="content">
-                    Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.
-                </div>
-            </li>
-        </ul>
-    </div>
-    <div class='two spacing'></div>
-</div> -->
