@@ -1217,6 +1217,7 @@ body.screenshot {
   margin: 0 20px;
   background: #fff;
   text-align: center;
+  min-height: 352px;
 }
 .modBoxedTextSlider .box h3 {
   margin-bottom: 40px;
