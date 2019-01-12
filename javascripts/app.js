@@ -281,7 +281,7 @@ jQuery(document).foundation();
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 4000,
-        pauseOnHover: false,
+        pauseOnHover: true,
         responsive: [
           {
             breakpoint: 1024,
@@ -334,7 +334,7 @@ jQuery(document).foundation();
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
-        pauseOnHover: false,
+        pauseOnHover: true,
         responsive: [
           {
             breakpoint: 767,
