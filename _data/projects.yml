@@ -1,7 +1,7 @@
 # project class key: interior, exterior, walls, trim, doors, patch-repair, caulking, foyer, hard-to-reach
 # Consider using a Foundation "Clearing Lightbox" for multi-image projects if the built-in slider isn't sufficient.
 
-- image: images/@stock/project-thumbnails-1.jpg
+- image: images/projects/project-1-thumbnail.jpg
   title: Project - 1
   url: project-1.html
   class: interior walls trim patch-repair caulking
