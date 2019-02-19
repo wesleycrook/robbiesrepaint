@@ -571,8 +571,10 @@ jQuery(document).foundation();
           $('li', gallery).each(function() {
             if ($(this).hasClass(cat)) {
               $(this).removeClass('hidden');
+              console.log(cat + " has class")
             } else {
               $(this).addClass('hidden');
+              console.log(cat + " removed class")
             }
           });
         }

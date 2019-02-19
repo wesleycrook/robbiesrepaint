@@ -3433,6 +3433,14 @@ body {
 /* CUSTOM STUFF */
 /* ------------------------ */
 
+.top-bar .title-area a {
+  margin-left: 25px;
+}
+
+.top-bar .name h1 a {
+  width: 150px;
+}
+
 .services .slick-prev:before,
 .services .slick-next:before {
   color: #555;
@@ -3444,4 +3452,30 @@ body {
 
 .footer-contact-info {
   font-size: 130%;
+}
+
+@media only screen and (max-width: 60em) {
+  .top-bar .name h1 a {
+    width: 110px
+  }
+}
+
+/* Tablet */
+@media only screen and (max-width: 767px) {
+  .top-bar .name h1 a {
+    position: relative;
+    z-index: 1;
+    width: 120px;
+    margin: 0;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+  .top-bar .name h1 a {
+    position: relative;
+    z-index: 1;
+    width: 120px;
+    margin: 0;
+  }
 }
