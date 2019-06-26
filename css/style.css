@@ -3433,6 +3433,10 @@ body {
 /* CUSTOM STUFF */
 /* ------------------------ */
 
+.white h2 {
+  color: #ffffff;
+}
+
 .top-bar .title-area a {
   margin-left: 25px;
 }
@@ -3448,6 +3452,11 @@ body {
 
 #callToActionPhone {
   font-weight: bold;
+}
+
+#callToActionPhone .gc-cs-link {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .footer-contact-info {
