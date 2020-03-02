@@ -231,7 +231,7 @@ layout: default
                 <ul class='gallery large-block-grid-3 medium-block-grid-3 seperated small-block-grid-2'>
                     {% for project in site.data.projects %}
                     <li class='{{project.class}}'>
-                        <a href='{{site.baseurl}}/projects/{{project.url}}'>
+                        <a href='{{site.baseurl}}projects/{{project.url}}'>
                             <img width="600" height="500" alt="" src="{{project.image}}" />
                             <div class='overlay' style='background: rgba(248, 204, 48, 0.8);'>
                                 <div class='thumb-info'>
@@ -386,11 +386,11 @@ layout: default
         {% endif %}
         <div class='large-4 medium-4 columns'>
             <div class='mod modBlogPost'>
-                <a href="{{site.baseurl}}/faqs/{{faq.url}}"><img alt="" src="{{site.baseurl}}/{{faq.image}}" /></a>
+                <a href="{{site.baseurl}}faqs/{{faq.url}}"><img alt="" src="{{site.baseurl}}{{faq.image}}" /></a>
                 <div class='content'>
-                    <h4><a href="{{site.baseurl}}/faqs/{{faq.url}}">{{faq.title}}</a></h4>
+                    <h4><a href="{{site.baseurl}}faqs/{{faq.url}}">{{faq.title}}</a></h4>
                     <p>{{faq.excerpt}}</p>
-                    <p><a href="{{site.baseurl}}/faqs/{{faq.url}}">Read More <i class="fas fa-angle-double-right"></i></a></p>
+                    <p><a href="{{site.baseurl}}faqs/{{faq.url}}">Read More <i class="fas fa-angle-double-right"></i></a></p>
                 </div>
             </div>
         </div>
@@ -400,7 +400,7 @@ layout: default
     <div class='row'>
         <div class='large-12 columns'>
             <p class='centered-text'>
-                <a class='button' href='{{site.baseurl}}/faqs/index.html'>See More Frequently Asked Questions</a>
+                <a class='button' href='{{site.baseurl}}faqs/index.html'>See More Frequently Asked Questions</a>
             </p>
         </div>
     </div>
