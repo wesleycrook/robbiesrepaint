@@ -809,6 +809,7 @@ jQuery(document).foundation();
 // ************************
 
 // Obfuscate email address - https://stackoverflow.com/questions/23002711/how-to-show-email-addresses-on-the-website-to-avoid-spams
+// See http://www.wbwip.com/wbw/emailencoder.html
 const obfuscateEmailAddress = () => {
   let user = '&#114;&#111;&#098;&#098;&#105;&#101;';
   let domain = '&#114;&#111;&#098;&#098;&#105;&#101;&#115;&#114;&#101;&#112;&#097;&#105;&#110;&#116;&#046;&#099;&#111;&#109;';
@@ -825,8 +826,7 @@ const obfuscateEmailAddress = () => {
 }
 obfuscateEmailAddress();
 
-const phone = '&#056;&#052;&#051;&#045;&#057;&#051;&#052;&#045;&#054;&#052;&#055;&#049;';
-
+const phone = '&#056;&#048;&#051;&#045;&#057;&#054;&#055;&#045;&#048;&#053;&#054;&#049;';
 const getPhoneNumber = () => {
   return phone;
 }
