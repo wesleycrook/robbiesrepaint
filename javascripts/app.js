@@ -811,9 +811,9 @@ jQuery(document).foundation();
 // Obfuscate email address - https://stackoverflow.com/questions/23002711/how-to-show-email-addresses-on-the-website-to-avoid-spams
 // See http://www.wbwip.com/wbw/emailencoder.html
 const obfuscateEmailAddress = () => {
-  let user = '&#114;&#111;&#098;&#098;&#105;&#101;';
-  let domain = '&#114;&#111;&#098;&#098;&#105;&#101;&#115;&#114;&#101;&#112;&#097;&#105;&#110;&#116;&#046;&#099;&#111;&#109;';
-  let emailElement = document.getElementById('email');
+  let user = 'paintwithrobbie';
+  let domain = 'gmail.com';
+  let emailElement = document.getElementById('email')
   let emailAddress = user + '@' + domain;
   
   // Set the Human-Readable email address to the encoded version, as it will be translated by the browser.
